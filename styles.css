@@ -163,6 +163,7 @@ nav ul {
       margin: auto;
       margin-bottom: 50vh;
       background: linear-gradient(#131c27, #52bab3);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 }
