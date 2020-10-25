@@ -90,8 +90,25 @@ nav ul {
       font-family: 'Pattaya', sans-serif;
       font-size: 5rem;
       color: #52bab3;
-
+      transition: .5s;
+      animation: color 5s 1;
 }
+
+@keyframes color {
+      0% {
+            color: #52bab3;
+      }
+
+      50% {
+            color: white;
+      }
+
+      100% {
+            color: #52bab3
+      }
+}
+
+
 
 
 .hero {
@@ -313,7 +330,7 @@ nav ul {
 
 .form-wrapper {
       background: rgba(0, 0, 0, .7);
-      max-width: 80vw;
+      width: 800px;
       color: white;
       border-radius: 2rem;
 
@@ -329,10 +346,11 @@ nav ul {
 .email-form {
       text-align: center;
       padding: 3rem;
+
 }
 
 .form-wrapper label {
-      margin: 0rem 3rem;
+      margin: 1rem;
 }
 
 .form-wrapper button {
@@ -351,6 +369,18 @@ nav ul {
       font-size: 3.2rem;
 }
 
+.name-form label,
+.name-form input,
+.email-form label,
+.email-form input {
+      display: block;
+      margin: 0 auto;
+}
+
+.name-form input,
+.email-form input {
+      min-width: 50%;
+}
 
 /* F o o t e r */
 
@@ -380,7 +410,7 @@ footer {
       display: flex;
       flex: 1 1 40rem;
       font-family: 'Pattaya', sans-serif;
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: #52bab3;
 }
 
@@ -405,6 +435,9 @@ footer {
             top: -20%;
       }
 
+      .form-wrapper {
+            margin: 0 10rem;
+      }
 
 }
 
