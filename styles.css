@@ -91,23 +91,7 @@ nav ul {
       font-size: 5rem;
       color: #52bab3;
       transition: .5s;
-      animation: color 5s 1;
 }
-
-@keyframes color {
-      0% {
-            color: #52bab3;
-      }
-
-      50% {
-            color: white;
-      }
-
-      100% {
-            color: #52bab3
-      }
-}
-
 
 
 
@@ -202,11 +186,11 @@ nav ul {
       right: -10%;
       z-index: -1;
       opacity: 0.5;
-      animation: cloudAnimation2 40s infinite alternate ease-in-out .5s;
+      animation: cloudAnimation2 40s infinite ease-in-out;
 }
 
 .moving-cloud-2 {
-      animation: cloudAnimation1 40s infinite alternate ease-in-out;
+      animation: cloudAnimation1 40s infinite ease-in-out;
 
 }
 
