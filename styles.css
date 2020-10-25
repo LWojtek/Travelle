@@ -502,4 +502,12 @@ footer {
       }
 
 
+      .footer-wrapper h5 {
+            font-size: 2rem;
+      }
+
+      .footer-wrapper img {
+            max-width: 2rem;
+      }
+
 }
