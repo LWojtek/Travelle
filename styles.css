@@ -140,6 +140,11 @@ nav ul {
 
 }
 
+a:hover {
+      color: rgb(82, 186, 179);
+      transition: .3s;
+
+}
 
 /* L o c a t i o n s     S e c t i o n */
 
