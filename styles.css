@@ -60,7 +60,7 @@ a {
 
 
 .main-head {
-      background-color: #131c27;
+      background-color: #343c44;
       color: white;
 }
 
@@ -108,11 +108,7 @@ nav ul {
 
 }
 
-.hero h2 {
-      padding: 2rem;
-      text-shadow: var(--shadow);
-}
-
+.hero h2,
 .hero h3 {
       padding: 2rem;
       text-shadow: var(--shadow);
@@ -144,7 +140,7 @@ nav ul {
 }
 
 
-/* B e n e f i t s   S e c t i o n */
+/* L o c a t i o n s     S e c t i o n */
 
 #locations {
       min-height: 100vh;
@@ -162,15 +158,15 @@ nav ul {
       width: 95%;
       margin: auto;
       margin-bottom: 50vh;
-      background: linear-gradient(#131c27, #52bab3);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: white;
+      text-shadow: var(--shadow);
+
 }
 
 .locations-head h2 {
       letter-spacing: .2rem;
-      text-decoration: underline;
+
+
 }
 
 .locations-head h3 {
@@ -180,7 +176,7 @@ nav ul {
 
 .cloud {
       position: absolute;
-      top: -20%;
+      top: 0%;
       right: 0%;
 }
 
@@ -216,19 +212,186 @@ nav ul {
       }
 
       to {
-            transform: translate(100%, 0%)
+            transform: translate(100%, -30%)
       }
 }
 
 
 
+/* B e n e f i t s     S e c t i o n */
+
+#benefits {
+
+      min-height: 100vh;
+      background: white;
+
+}
+
+
+.benefits-head {
+      background-color: #343c44;
+      padding: 3rem;
+      min-height: 30vh;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+
+}
+
+.benefits-head h3 {
+      padding: 1rem;
+
+}
+
+.cards {
+      width: 90%;
+      margin: 20vh auto;
+      display: flex;
+      min-height: 60%;
+      flex-wrap: wrap;
+}
+
+.cards img {
+      height: 6rem;
+      margin: 2rem;
+}
+
+.card-icon {
+      display: flex;
+      background: #52bab3;
+      min-height: 8vh;
+      justify-content: center;
+      align-items: center;
+}
+
+.card {
+
+      flex: 1 1 40rem;
+      min-height: 30vh;
+      margin: 2rem;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, .2), 0px 20px 20px rgba(0, 0, 0, .2);
+      text-align: center;
+      transition: .5s;
+      flex-basis: 30rem;
+
+
+}
+
+.card h2 {
+      padding: 2rem;
+      font-size: 3.2rem;
+}
+
+.card p {
+      font-size: 2rem;
+      padding: 2rem;
+}
+
+
+
+.card:hover {
+      box-shadow: 0px 10px 10px rgba(82, 186, 179, 0.541), 0px 20px 20px rgba(0, 0, 0, .2);
+}
+
+
+/* C o n t a c t   S e c t i o n */
+
+
+#contact {
+      min-height: calc(100vh - 10vh);
+      background: linear-gradient(rgba(0, 0, 0, .5), transparent), url(./img/contact-mountain.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+}
+
+.form-wrapper {
+      background: rgba(0, 0, 0, .7);
+      max-width: 80vw;
+      color: white;
+      border-radius: 2rem;
+
+}
+
+.form-head {
+      text-align: center;
+      padding: 4rem;
+      text-shadow: var(--shadow);
+}
+
+.name-form,
+.email-form {
+      text-align: center;
+      padding: 3rem;
+}
+
+.form-wrapper label {
+      margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+      width: 100%;
+      border-radius: 0rem 0rem 2rem 2rem;
+      margin-top: 8rem;
+}
+
+.form-wrapper input {
+      padding: 1rem 1.3rem;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.85)
+}
+
+.form-head h2 {
+      font-size: 3.2rem;
+}
+
+
+/* F o o t e r */
+
+footer {
+      background-color: #343c44;
+      color: white;
+}
+
+.footer-wrapper {
+      display: flex;
+      padding: 2rem;
+      width: 90%;
+      margin: auto;
+      align-items: center;
+      min-height: 10vh;
+}
+
+.footer-wrapper ul {
+      list-style: none;
+      display: flex;
+      flex: 1 1 40rem;
+      justify-content: space-between;
+}
+
+.footer-wrapper h5 {
+      list-style: none;
+      display: flex;
+      flex: 1 1 40rem;
+      font-family: 'Pattaya', sans-serif;
+      font-size: 3rem;
+      color: #52bab3;
+}
 
 
 
 /* M e d i a   Q u e r i e s */
 
 
-@media screen and (max-width: 954px) {
+
+
+@media screen and (max-width: 1280px) {
 
       nav {
             text-align: center;
@@ -238,9 +401,17 @@ nav ul {
             padding: 1rem;
       }
 
+      .cloud {
+            top: -20%;
+      }
+
+
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 660px) {
+
+      /* F i r s t  P a g e */
+
       nav ul {
             display: block;
       }
@@ -263,6 +434,8 @@ nav ul {
             display: block;
       }
 
+      /* S e c o n d  P a g e */
+
       .moving-cloud-1 {
             display: none;
       }
@@ -271,6 +444,45 @@ nav ul {
             top: -30%;
       }
 
+      .benefits-head h3 {
+            font-size: 2rem;
+      }
+
+      .card h2 {
+            font-size: 3.2rem;
+      }
+
+      .card p {
+            padding: 4rem;
+            font-size: 2rem;
+      }
+
+      .locations-head h2 {
+            font-size: 3.2rem;
+      }
+
+      .locations-head h3 {
+            font-size: 2rem;
+            width: 300px;
+      }
+
+      /* T h i r d  P a g e */
+
+      .benefits-head h2 {
+            font-size: 3.2rem;
+      }
+
+      .benefits-head h3 {
+            font-size: 2rem;
+      }
+
+      .cloud {
+            top: -50%;
+      }
+
+      .cards {
+            margin: 0 auto;
+      }
 
 
 }
