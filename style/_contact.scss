@@ -1,0 +1,77 @@
+/* C o n t a c t   S e c t i o n */
+
+
+#contact {
+      min-height: calc(100vh - 10vh);
+      background: linear-gradient(rgba(0, 0, 0, .5), transparent), url(../img/contact-mountain.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+}
+
+.form-wrapper {
+      background: rgba(0, 0, 0, .7);
+      width: 800px;
+      color: white;
+      border-radius: 2rem;
+
+      label {
+            margin: 1rem;
+      }
+
+      button {
+            width: 100%;
+            border-radius: 0rem 0rem 2rem 2rem;
+            margin-top: 8rem;
+      }
+
+      input {
+            padding: 1rem 1.3rem;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.85);
+            transition: .5s;
+
+
+            &:focus {
+                  background-color: rgba(82, 186, 179, .5);
+            }
+      }
+
+
+}
+
+
+.form-head {
+      text-align: center;
+      padding: 4rem;
+      text-shadow: var(--shadow);
+
+      h2 {
+            font-size: 3.2rem;
+      }
+}
+
+
+.name-form,
+.email-form {
+      text-align: center;
+      padding: 3rem;
+
+}
+
+
+.name-form label,
+.name-form input,
+.email-form label,
+.email-form input {
+      display: block;
+      margin: 0 auto;
+}
+
+.name-form input,
+.email-form input {
+      min-width: 50%;
+}

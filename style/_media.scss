@@ -1,0 +1,127 @@
+/* M e d i a   Q u e r i e s */
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+      nav {
+            text-align: center;
+      }
+
+      #logo {
+            padding: 1rem;
+      }
+
+      .cloud {
+            top: -20%;
+      }
+
+      .form-wrapper {
+            margin: 0 10rem;
+      }
+
+      #locations {
+            background-size: cover;
+      }
+}
+
+
+
+
+
+@media screen and (max-width: 660px) {
+
+      /* F i r s t  P a g e */
+
+      nav ul {
+            display: block;
+      }
+
+      .book-btn {
+            margin-top: 10rem;
+      }
+
+      .hero h2 {
+            font-size: 3.2rem;
+
+            margin-bottom: 5rem;
+      }
+
+      .hero h3 {
+            font-size: 2rem;
+      }
+
+      .link {
+            display: block;
+      }
+
+      /* S e c o n d  P a g e */
+
+      .moving-cloud-1 {
+            display: none;
+      }
+
+      .moving-cloud-2 {
+            top: -30%;
+      }
+
+      .benefits-head h3 {
+            font-size: 2rem;
+      }
+
+      .card h2 {
+            font-size: 3.2rem;
+      }
+
+      .card p {
+            padding: 4rem;
+            font-size: 2rem;
+      }
+
+      .locations-head h2 {
+            font-size: 3.2rem;
+      }
+
+      .locations-head h3 {
+            font-size: 2rem;
+            width: 300px;
+      }
+
+      /* T h i r d  P a g e */
+
+      .benefits-head h2 {
+            font-size: 3.2rem;
+      }
+
+      .benefits-head h3 {
+            font-size: 2rem;
+      }
+
+      .cloud {
+            top: -50%;
+      }
+
+      .cards {
+            margin: 0 auto;
+      }
+
+      .footer-wrapper {
+            width: 100%;
+
+      }
+
+      .form-wrapper {
+            border-radius: 0rem 0rem 2rem 2rem
+      }
+
+
+      .footer-wrapper h5 {
+            font-size: 2rem;
+      }
+
+      .footer-wrapper img {
+            max-width: 2rem;
+      }
+
+}

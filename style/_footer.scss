@@ -1,0 +1,31 @@
+/* F o o t e r */
+
+footer {
+      background-color: #343c44;
+      color: white;
+}
+
+.footer-wrapper {
+      display: flex;
+      padding: 2rem;
+      width: 90%;
+      margin: auto;
+      align-items: center;
+      min-height: 10vh;
+
+      ul {
+            list-style: none;
+            display: flex;
+            flex: 1 1 40rem;
+            justify-content: space-between;
+      }
+
+      h5 {
+            list-style: none;
+            display: flex;
+            flex: 1 1 40rem;
+            font-family: 'Pattaya', sans-serif;
+            font-size: 3.5rem;
+            color: #52bab3;
+      }
+}
