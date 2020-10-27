@@ -34,8 +34,18 @@
 
       /* F i r s t  P a g e */
 
+      .main-head {
+            width: 100%;
+      }
+
+      html {
+            font-size: 50%;
+      }
+
       nav ul {
+
             display: block;
+            height: 10vh;
       }
 
       .book-btn {
@@ -99,7 +109,7 @@
       }
 
       .cloud {
-            top: -50%;
+            top: -30%;
       }
 
       .cards {

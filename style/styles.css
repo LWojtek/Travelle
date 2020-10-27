@@ -405,8 +405,15 @@ a:hover {
 
 @media screen and (max-width: 660px) {
   /* F i r s t  P a g e */
+  .main-head {
+    width: 100%;
+  }
+  html {
+    font-size: 50%;
+  }
   nav ul {
     display: block;
+    height: 10vh;
   }
   .book-btn {
     margin-top: 10rem;
@@ -453,7 +460,7 @@ a:hover {
     font-size: 2rem;
   }
   .cloud {
-    top: -50%;
+    top: -30%;
   }
   .cards {
     margin: 0 auto;
