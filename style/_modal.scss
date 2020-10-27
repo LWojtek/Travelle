@@ -1,5 +1,10 @@
 /* C o n t a c t   S e c t i o n */
-
+.background {
+      background-color: rgba(255, 255, 255, 1);
+      position: fixed;
+      top: 0;
+      left: 0;
+}
 
 .modal-bg {
       position: fixed;
@@ -7,11 +12,10 @@
       height: 100vh;
       top: -100%;
       left: 0;
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
-      visibility: hidden;
-      opacity: 0;
+
       transition: visibility 2s, opacity 1s;
       animation: appear 2s ease-in,
             slide-in .5s ease-in;
@@ -21,8 +25,8 @@
 }
 
 .modal-active {
-      visibility: visible;
-      opacity: 1;
+
+      display: flex;
 }
 
 .modal {
