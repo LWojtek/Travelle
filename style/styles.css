@@ -567,4 +567,136 @@ footer {
             transform: translate(100%, -30%);
   }
 }
+
+/* C o n t a c t   S e c t i o n */
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 2s, opacity 1s;
+  transition: visibility 2s, opacity 1s;
+  -webkit-animation: appear 1.2s ease-in;
+          animation: appear 1.2s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+  width: 800px;
+  color: white;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.modal label {
+  margin: 1rem;
+}
+
+.modal button {
+  width: 100%;
+  border-radius: 0rem 0rem 2rem 2rem;
+  margin-top: 8rem;
+}
+
+.modal input {
+  padding: 1rem 1.3rem;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.modal input:focus {
+  background-color: rgba(82, 186, 179, 0.5);
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+  text-shadow: var(--shadow);
+}
+
+.form-head h2 {
+  font-size: 3.2rem;
+}
+
+.name-form,
+.email-form {
+  text-align: center;
+  padding: 3rem;
+}
+
+.name-form label,
+.name-form input,
+.email-form label,
+.email-form input {
+  display: block;
+  margin: 0 auto;
+}
+
+.name-form input,
+.email-form input {
+  min-width: 50%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-weight: bold;
+  font-size: 4rem;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: red;
+}
+
+.modal-close:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #52bab3;
+}
+
+@-webkit-keyframes appear {
+  from {
+    -webkit-transform: scale(0) translateY(0%);
+            transform: scale(0) translateY(0%);
+  }
+  to {
+    -webkit-transform: scale(1) translateY(-100%);
+            transform: scale(1) translateY(-100%);
+  }
+}
+
+@keyframes appear {
+  from {
+    -webkit-transform: scale(0) translateY(0%);
+            transform: scale(0) translateY(0%);
+  }
+  to {
+    -webkit-transform: scale(1) translateY(-100%);
+            transform: scale(1) translateY(-100%);
+  }
+}
 /*# sourceMappingURL=styles.css.map */
