@@ -134,4 +134,25 @@
             max-width: 2rem;
       }
 
+
+      .modal {
+            position: relative;
+
+            .form-head {
+                  height: 2vh;
+                  margin-bottom: 4rem;
+                  margin-top: 4rem;
+            }
+
+            .modal-close {
+                  position: absolute;
+                  top: 100px;
+                  right: 30px;
+            }
+
+      }
+
+
+
+
 }
