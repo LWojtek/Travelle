@@ -136,7 +136,7 @@
 
 
       .modal {
-            position: relative;
+            position: sticky;
 
             .form-head {
                   height: 2vh;
@@ -150,7 +150,19 @@
                   right: 30px;
             }
 
+
+            form button {
+                  display: block;
+                  margin-top: 0;
+            }
+
+
+
       }
+
+
+
+
 
 
 

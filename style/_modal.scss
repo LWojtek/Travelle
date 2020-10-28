@@ -30,13 +30,33 @@
 }
 
 .modal {
-      background: rgba(0, 0, 0, .7);
+      margin-top: 13rem;
+      background: rgba(0, 0, 0, .9);
       width: 800px;
       color: white;
       border-radius: 2rem;
       position: relative;
 
 
+
+      .modal-close-btn {
+            width: 100%;
+            border: none;
+            border-radius: 0px;
+            padding: 1rem 4rem;
+            background-color: rgba(238, 95, 95, 0.5);
+            color: white;
+            transition: .5s ease-in-out;
+            outline: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 2rem 2rem 0rem 0rem;
+            margin-top: 0;
+
+            &:hover {
+                  background-color: rgb(238, 95, 95, );
+            }
+      }
 
       label {
             margin: 1rem;
@@ -45,7 +65,10 @@
       button {
             width: 100%;
             border-radius: 0rem 0rem 2rem 2rem;
-            margin-top: 8rem;
+            margin-top: 2rem;
+
+
+
       }
 
       input {
@@ -72,6 +95,9 @@
       h2 {
             font-size: 3.2rem;
       }
+
+
+
 }
 
 

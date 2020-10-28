@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
 
 })
 
-const closeBtn = document.querySelector('.modal-close');
+const closeBtn = document.querySelector('.modal-close-btn');
 const modal = document.querySelector('.modal-bg');
 
 
