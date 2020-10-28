@@ -30,3 +30,7 @@ closeBtn.addEventListener('click', () => {
       modal.classList.remove('modal-active');
 
 })
+
+document.addEventListener('click', () => {
+      modal.classList.remove('modal-active');
+})
